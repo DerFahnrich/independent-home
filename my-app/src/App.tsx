@@ -1,3 +1,10 @@
-export const App = () => {
-  return <div>This is the app</div>;
+import { Login } from "./Login";
+
+export const App = (): JSX.Element => {
+  return (
+    <div>
+      This is the app
+      <Login />
+    </div>
+  );
 };
