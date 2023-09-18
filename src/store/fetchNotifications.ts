@@ -1,5 +1,4 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import INotification from "./interfaces/INotification";
 import { URLtoNotifications } from "./dashboardThunks";
 
 export const fetchNotifications = createAsyncThunk(

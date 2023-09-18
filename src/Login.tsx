@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAppDispatch } from "./hooks/useAppDispatch";
-import { setIsLoggedIn } from "./authSlice";
+import { setIsLoggedIn } from "./store/authSlice";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
@@ -24,7 +24,7 @@ export const Login = (): JSX.Element => {
     });
 
     const data: boolean = await response.json();
-    
+
     dispatch(setIsLoggedIn(data));
     navigate("/dashboard", { replace: true });
   };
