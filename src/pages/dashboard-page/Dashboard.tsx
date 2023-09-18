@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 
-import "./Dashboard.css";
-import "react-loading-skeleton/dist/skeleton.css";
-
 import { useAppDispatch } from "../../hooks/useAppDispatch";
 import { useAppSelector } from "../../hooks/useAppSelector";
 import AppWidget from "./AppWidget/AppWidget";
@@ -18,8 +15,12 @@ import NotificationList from "./notifications-list/NotificationList";
 import SupportWidget from "./support-widget/SupportWidget";
 import dashboardService from "../../services/DashboardService";
 import UsersService from "../../services/UsersService";
-import { selectShowNotifications } from "../../dashboardSlice";
-import { fetchCustomer } from "../../dashboardThunks";
+
+import { selectShowNotifications } from "../../store/dashboardSlice";
+import { fetchCustomer } from "../../store/dashboardThunks";
+
+import "react-loading-skeleton/dist/skeleton.css";
+import "./Dashboard.css";
 
 const Dashboard = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -37,7 +38,7 @@ const Dashboard = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="dashboard-container">
+    <div className="dashboard">
       <DashboardHeader />
       {showNotifications ? <NotificationList /> : null}
       <div className="dashboard-grid">

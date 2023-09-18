@@ -1,5 +1,5 @@
-import { selectNotifications } from "../../../dashboardSlice";
 import { useAppSelector } from "../../../hooks/useAppSelector";
+import { selectNotifications } from "../../../store/dashboardSlice";
 import Notification from "./Notification";
 
 import "./NotificationList.css";

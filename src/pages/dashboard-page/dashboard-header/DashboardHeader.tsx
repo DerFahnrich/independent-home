@@ -2,6 +2,12 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import CircularProgress from "@mui/material/CircularProgress";
 
+import { useAppDispatch } from "../../../hooks/useAppDispatch";
+import { useAppSelector } from "../../../hooks/useAppSelector";
+import { fetchNotifications } from "../../../store/fetchNotifications";
+import ISessionContact from "../../../interfaces/ISessionContact";
+import NetworkService from "../../../services/NetworkService";
+
 import {
   selectNotifications,
   selectNotificationsIsLoading,
@@ -9,13 +15,7 @@ import {
   selectCustomerIsLoading,
   selectShowNotifications,
   toggleShowNotifications,
-} from "../../../dashboardSlice";
-
-import { fetchNotifications } from "../../../fetchNotifications";
-import { useAppDispatch } from "../../../hooks/useAppDispatch";
-import { useAppSelector } from "../../../hooks/useAppSelector";
-import ISessionContact from "../../../interfaces/ISessionContact";
-import NetworkService from "../../../services/NetworkService";
+} from "../../../store/dashboardSlice";
 
 import "./DashboardHeader.css";
 

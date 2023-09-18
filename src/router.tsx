@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import { App } from "./App";
-import { Login } from "./Login";
 import Dashboard from "./pages/dashboard-page/Dashboard";
+import { Login } from "./pages/login-page/Login";
 
 export const router = createBrowserRouter(
   createRoutesFromElements([

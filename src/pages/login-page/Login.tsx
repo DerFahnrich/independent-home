@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useAppDispatch } from "./hooks/useAppDispatch";
-import { setIsLoggedIn } from "./store/authSlice";
 import { useNavigate } from "react-router-dom";
+import { useAppDispatch } from "../../hooks/useAppDispatch";
+import { setIsLoggedIn } from "../../store/authSlice";
 import "./Login.css";
 
 export const Login = (): JSX.Element => {
@@ -36,7 +36,7 @@ export const Login = (): JSX.Element => {
   };
 
   return (
-    <div className="login">
+    <div className="login-page">
       <div className="background">
         <div className="shape"></div>
         <div className="shape"></div>
@@ -62,7 +62,7 @@ export const Login = (): JSX.Element => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button>Log In</button>
+        <button className="login-button">Log In</button>
       </form>
     </div>
   );

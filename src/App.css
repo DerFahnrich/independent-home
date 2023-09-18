@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--app-super-light-grey);
+}
+
+/* DO NOT ADD VARIABLES HERE UNLESS YOU ARE  ABSOLUTELY SURE THEY SHOULD BE GLOBAL */
+:root {
+  /* BRANDED VARIABLES */
+  --app-main-color: #000000;
+
+  --app-green: #2dc659;
+  --app-red: #fd6234;
+  --app-yellow: #fcd41e;
+
+  --app-flavor-1: #f17b3b;
+  --app-flavor-2: #e6bd03;
+  --app-flavor-3: #89cb55;
+  --app-flavor-4: #37ba9b;
+  --app-flavor-5: #25a6d1;
+  --app-flavor-6: #2c70b5;
+  --app-flavor-7: #79438c;
+  --app-flavor-8: #d54f8c;
+  --app-flavor-9: #dc5e5e;
+
+  --app-pbx-conference: var(--app-flavor-5);
+  --app-pbx-refer: var(--app-flavor-7);
+  --app-pbx-hunt-group: var(--app-flavor-8);
+  --app-pbx-channel: var(--app-flavor-9);
+  --app-pbx-voicemail: var(--app-flavor-4);
+  --app-pbx-connection: var(--app-flavor-2);
+
+  --app-link: var(--app-flavor-6);
+
+  /* non-database colors */
+  --app-btn-color: var(--app-main-color); /* ! */
+  --app-btn-color-hover: color-mix(in srgb, var(--app-main-color) 90%, white);
+  --app-red-darken-10: color-mix(in srgb, var(--app-main-color) 90%, black);
+  --app-notification: var(--app-red);
+
+  /* NOT BRANDED VARIABLES */
+
+  --app-white: #fff;
+  --app-background-color: #ececec;
+  --app-ornament: #d7d7d7;
+  --app-icon: #474747;
+
+  --app-super-light-grey: #f8f8f8;
+  --app-light-grey: #adadad;
+  --app-mid-grey: #727272;
+  --app-dark-grey: #242424;
+
+  --app-font-medium: Roboto-Medium, Helvetica, Arial, sans-serif;
+  --app-font-bold: Roboto-Bold, Helvetica, Arial, sans-serif;
+  --app-font-regular: Roboto-Regular, Helvetica, Arial, sans-serif;
+  --app-font-light: Roboto-Light, Helvetica, Arial, sans-serif;
+  --app-font-mono: RobotoMono-VariableFont_wght, Arial, sans-serif;
+}

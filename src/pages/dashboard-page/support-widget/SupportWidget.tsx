@@ -5,7 +5,7 @@ import { OpenInNew } from "@mui/icons-material";
 import {
   selectCustomer,
   selectCustomerIsLoading,
-} from "../../../dashboardSlice";
+} from "../../../store/dashboardSlice";
 import StandardWidget from "../../../common/standard-widget/StandardWidget";
 import WidgetDivider from "../../../common/widget-content/widget-divider/WidgetDivider";
 import { useAppSelector } from "../../../hooks/useAppSelector";

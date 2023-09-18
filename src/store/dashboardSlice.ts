@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchCustomer } from "./dashboardThunks";
 import { fetchNotifications } from "./fetchNotifications";
 import { RootState } from "./store";
-import INotification from "./interfaces/INotification";
-import IDashboardSlice from "./interfaces/IDashboardSlice";
+import INotification from "../interfaces/INotification";
+import IDashboardSlice from "../interfaces/IDashboardSlice";
 
 const initialState: IDashboardSlice = {
   notifications: [] as INotification[],
