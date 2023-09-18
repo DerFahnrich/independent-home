@@ -1,11 +1,13 @@
-import NetworkService from "./networkService";
+import NetworkService from "./NetworkService";
 
 const URL = "/api/internal/flow";
 
 class FlowService {
-    getPbxLicense = async () => {
-        return NetworkService.sendGet(URL + '/pbx/license').then(license => license.json());
-    }
+  getPbxLicense = async () => {
+    return NetworkService.sendGet(URL + "/pbx/license").then((license) =>
+      license.json()
+    );
+  };
 }
 
 export default new FlowService();

@@ -6,7 +6,7 @@ import {
 
 import { App } from "./App";
 import { Login } from "./Login";
-import Dashboard from "./dashboard/Dashboard";
+import Dashboard from "./pages/dashboard-page/Dashboard";
 
 export const router = createBrowserRouter(
   createRoutesFromElements([
