@@ -18,7 +18,6 @@ export const App = (): JSX.Element => {
   };
   return (
     <div>
-      This is the app
       <Login />
       <button onClick={fetchLogos}>Fetch Logos</button>
       <button onClick={fetchCustomers}>Fetch hjasioudfghiuashdfgiashfgiuashfpiughsa</button>

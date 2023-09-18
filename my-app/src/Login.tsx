@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Login.css"
 
 export const Login = (): JSX.Element => {
   const [username, setUsername] = useState<string>("");
@@ -28,19 +29,35 @@ export const Login = (): JSX.Element => {
   };
 
   return (
+    
     <div className="login">
-      <form onSubmit={handleOnSubmit}>
-        <input
+      <div className="background">
+        <div className="shape"></div>
+        <div className="shape"></div>
+      </div>
+      <form>
+        <h3>Login Here</h3>
+
+        <label htmlFor="username">Username</label>
+        <input 
+          type="text"  
+          placeholder="Email or Phone"  
+          id="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          type="text"
         />
-        <input
+
+        <label htmlFor="password">Password</label>
+        <input 
+          type="password"  
+          placeholder="Password" 
+          id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          type="password"
         />
-        <button type="submit">login</button>
+
+        <button>Log In</button>
+
       </form>
     </div>
   );
