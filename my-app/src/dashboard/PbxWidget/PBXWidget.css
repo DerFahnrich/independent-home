@@ -1,0 +1,17 @@
+.pbx-widget .pbx-sub-header {
+    align-items: center;
+    gap: 12px;
+    display: flex;
+}
+
+.pbx-widget .pbx-sub-header .pbx-sub-header-button {
+    background-color: var(--app-main-color);
+    border-radius: 2px;
+    color: var(--app-white);
+    font-family: var(--app-font-bold);
+    font-size: 10px;
+    line-height: normal;
+    padding-block: 3px;
+    padding-inline: 6px;
+    text-transform: uppercase;
+}

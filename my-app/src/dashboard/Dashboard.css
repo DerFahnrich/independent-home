@@ -1,0 +1,100 @@
+#dashboard {
+    background-color: var(--app-super-light-grey);
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+#dashboard .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 1044px;
+}
+
+#dashboard .dashboard-container .dashboard-grid {
+    display: grid;
+
+    grid-template-areas:
+    "users licenses pbx-services support"
+    "numbers addons apps user-activity"
+    "invoices . . .";
+
+    grid-template-columns:  252px 252px 252px 252px;
+    grid-template-rows: 306px 306px 306px 306px;
+    gap: 30px 12px;
+    justify-content: center;
+}
+
+#dashboard .dashboard-container .dashboard-grid .dashboard-header {
+    grid-area: header;
+}
+
+#dashboard .dashboard-container .dashboard-grid .apps {
+    grid-area: apps;
+}
+
+#dashboard .dashboard-container .dashboard-grid .support {
+    grid-area: support;
+}
+
+#dashboard .dashboard-container .dashboard-grid .pbx-services {
+    grid-area: pbx-services;
+}
+
+#dashboard .dashboard-container .dashboard-grid .users {
+    grid-area: users;
+}
+
+#dashboard .dashboard-container .dashboard-grid .licenses {
+    grid-area: licenses;
+}
+
+#dashboard .dashboard-container .dashboard-grid .addons {
+    grid-area: addons;
+}
+
+#dashboard .dashboard-container .dashboard-grid .numbers {
+    grid-area: numbers;
+}
+
+#dashboard .dashboard-container .dashboard-grid .dashboard-invoices {
+    grid-area: invoices;
+}
+
+#dashboard .dashboard-container .dashboard-grid .user-activity {
+    grid-area: user-activity;
+}
+
+@media (max-width: 1280px) {
+    #dashboard .dashboard-container {
+        max-width: 780px;
+    }
+
+    #dashboard .dashboard-container .dashboard-grid {
+        grid-template-areas:
+        "users licenses support"
+        "pbx-services numbers addons"
+        "apps user-activity invoices";
+
+        grid-template-columns:  252px 252px 252px;
+    }
+}
+
+@media (max-width: 1190px) {
+    #dashboard .dashboard-container {
+        max-width: 525px;
+    }
+
+    #dashboard .dashboard-container .dashboard-grid {
+        grid-template-areas:
+        "users support"
+        "licenses pbx-services"
+        "numbers addons"
+        "apps user-activity"
+        "invoices .";
+
+        grid-template-columns: 252px 252px;
+        grid-template-rows: 306px 306px 306px 306px 306px;
+    }
+}

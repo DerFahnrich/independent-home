@@ -1,0 +1,21 @@
+.invoice-row {
+    color: var(--app-icon);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.invoice-row .invoice-label {
+    line-height: 18px;
+    letter-spacing: 0.25px;
+
+}
+
+.invoice-row .invoice-additional-info {
+    font-family: var(--app-font-bold);
+    line-height: 18px;
+}
+
+.invoice-row.is-due .invoice-label {
+    color: var(--app-red);
+}

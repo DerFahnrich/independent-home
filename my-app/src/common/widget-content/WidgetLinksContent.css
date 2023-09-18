@@ -1,0 +1,4 @@
+.widget-links-content {
+    display: flex;
+    flex-direction: column;
+}

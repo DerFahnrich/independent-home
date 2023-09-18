@@ -1,0 +1,40 @@
+.slider-container .slider-content {
+    overflow: hidden;
+}
+
+.slider-container .active {
+    display: flex;
+}
+
+.slider-container .inactive {
+    display: none;
+}
+
+.slider-container .slide-image {
+    position: absolute;
+}
+
+.slider-container .all-dots {
+    padding-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container .all-dots .dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--app-ornament);
+}
+
+.slider-container .all-dots .dot:hover {
+    background-color: var(--app-light-grey);
+}
+
+.slider-container .all-dots .dot.active {
+    background-color: var(--app-main-color);
+}

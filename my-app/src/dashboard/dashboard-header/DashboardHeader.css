@@ -1,0 +1,100 @@
+.dashboard-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.dashboard-header .data-container {
+    color: var(--app-dark-grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header .data-container .welcome-text {
+    font-family: var(--app-font-bold);
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.dashboard-header .data-container .company {
+    font-family: var(--app-font-light);
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.dashboard-header .notifications-container {
+    align-items: center;
+    background-color: var(--app-main-color);
+    border-radius: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    padding: 9px;
+    user-select: none;
+    max-width: 48px;
+    transition-property: max-width;
+    transition-duration: 500ms;
+    width: auto;
+}
+
+.dashboard-header .notifications-container.disabled {
+    cursor: not-allowed;
+}
+
+.dashboard-header .notifications-container.loaded {
+    max-width: 250px;
+    padding: 9px 18px 9px 9px;
+}
+
+.dashboard-header .notifications-container .notifications-number-container {
+    align-items: center;
+    background-color: var(--app-white);
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.dashboard-header .notifications-container .notifications-number-container.hide {
+    background-color: var(--app-main-color);
+}
+
+.dashboard-header .notifications-container .notifications-number-container .notifications-number {
+    color: var(--app-main-color);
+    font-family: var(--app-font-bold);
+    font-size: 18px;
+}
+
+.dashboard-header .notifications-container .notifications-number-container .notifications-number.cancel {
+    color: var(--app-white)
+}
+
+.dashboard-header .notifications-container .notifications-number-container .notifications-loader {
+    animation: none;
+    color: var(--app-main-color);
+}
+
+
+.dashboard-header .notifications-container .notifications-text {
+    color: var(--app-white);
+    font-family: var(--app-font-bold);
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 1190px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .dashboard-header .data-container {
+        align-items: center;
+    }
+}

@@ -1,0 +1,9 @@
+.invoice-widget {
+    position: relative;
+}
+
+.invoice-widget .check-circle-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.support-widget-skeleton {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.support-widget-skeleton .info-skeleton {
+    width: 100%;
+}

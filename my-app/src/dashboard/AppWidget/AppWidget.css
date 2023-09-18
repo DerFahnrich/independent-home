@@ -1,0 +1,12 @@
+.popular-apps {
+    background-color: var(--app-background-color);
+    width: fit-content;
+    border-radius: 2px;
+    color: var(--app-dark-grey);
+    font-family: var(--app-font-bold);
+    font-size: 10px;
+    line-height: 18px;
+    padding-inline: 6px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}

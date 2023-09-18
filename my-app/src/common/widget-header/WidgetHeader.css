@@ -1,0 +1,38 @@
+.widget-header {
+    margin-bottom: 26px;
+    padding-inline: 4px;
+}
+
+.widget-header .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget-header .header .header-text {
+    color: var(--app-dark-grey);
+    font-size: 18px;
+    font-family: var(--app-font-bold);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-header .sub-header {
+    font-size: 18px;
+    font-family: var(--app-font-regular);
+    line-height: 30px;
+}
+
+.widget-header .header .goto-button {
+    background-color: var(--app-background-color);
+    border-radius: 50%;
+    display: flex;
+    font-size: 24px;
+    padding: 3px;
+}
+
+.widget-header .header .goto-button .icon {
+    color: var(--app-mid-grey);
+    font-size: 18px;
+}

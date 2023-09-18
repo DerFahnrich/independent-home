@@ -1,0 +1,25 @@
+.notification-container {
+    align-items: center;
+    background-color: var(--app-white);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 24px 1fr 24px;
+    margin: 0 0 12px;
+    padding: 10px;
+    position: relative;
+}
+
+.notification-container .notification-link-container .notification-link {
+    background-color: var(--app-background-color);
+    border-radius: 50%;
+    display: flex;
+    font-size: 24px;
+    padding: 3px;
+}
+
+.notification-container .notification-link-container .notification-link .icon {
+    color: var(--app-mid-grey);
+    font-size: 18px;
+}

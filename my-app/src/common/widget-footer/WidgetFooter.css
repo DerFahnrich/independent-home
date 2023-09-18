@@ -1,0 +1,29 @@
+.widget-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.widget-footer .button {
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    height: 18px;
+    padding: 0;
+}
+
+.widget-footer .button .icon {
+    color: var(--app-white);
+    font-size: 18px;
+}
+
+.widget-footer .button.active-button {
+    background-color: var(--app-main-color);
+}
+
+.widget-footer .button.inactive-button {
+    background-color: var(--app-background-color);
+}

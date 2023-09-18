@@ -1,0 +1,82 @@
+.support {
+    padding-bottom: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.support-widget-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.support-widget-container .logo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 3;
+}
+
+.logo-container img {
+    height: 48px;
+    object-fit: contain;
+}
+
+.support-widget-container .widget-help-text {
+    color: var(--app-light-grey);
+    font-family: var(--app-font-medium);
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+.support-widget-container .number {
+    color: var(--app-dark-grey);
+    font-family: var(--app-font-bold);
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.support-widget-container .email {
+    color: var(--app-dark-grey);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.support-widget-container .faq-container {
+    align-items: center;
+    display: flex;
+    font-family: var(--app-font-bold);
+    justify-content: space-between;
+}
+
+.support-widget-container .faq-container .faq-text {
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+    color: var(--app-flavor-6);
+    letter-spacing: normal;
+}
+
+.support-widget-container .faq-container .icon {
+    font-size: 18px;
+    color: var(--app-flavor-6);
+}
+
+.support-widget-container .support-container {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.support-widget-container .support-detail-container {
+    flex-direction: column;
+}

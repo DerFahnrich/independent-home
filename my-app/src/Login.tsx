@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useAppDispatch } from "./hooks/useAppDispatch";
+import { setIsLoggedIn } from "./authSlice";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 export const Login = (): JSX.Element => {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const navigate = useNavigate();
+  const dispatch = useAppDispatch();
 
   const url = "/api/internal/admin/login";
 
@@ -18,8 +23,10 @@ export const Login = (): JSX.Element => {
       },
     });
 
-    const data = await response.json;
-    console.log(data);
+    const data: boolean = await response.json();
+    
+    dispatch(setIsLoggedIn(data));
+    navigate("/dashboard", { replace: true });
   };
 
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {

@@ -1,0 +1,4 @@
+.widget-standard-content {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,60 @@
+.widget-standard-row {
+    --grid-row-padding: 0 4px;
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    grid-template-rows: 30px;
+}
+
+.widget-standard-row.two-col {
+    grid-template-columns: 1fr auto;
+    padding: var(--grid-row-padding);
+}
+
+.widget-standard-row.widget-link {
+    color: var(--app-icon);
+    text-decoration: none;
+}
+
+.widget-standard-row.widget-link:hover {
+    background-color: var(--app-super-light-grey);
+}
+
+.widget-standard-row.three-col {
+    grid-template-columns: auto 1fr auto;
+    padding: var(--grid-row-padding);
+}
+
+.widget-standard-row .widget-icon {
+    color: var(--app-icon);
+    grid-column: 1/2;
+    width: 18px;
+}
+
+.widget-standard-row .widget-icon SVG {
+    width: 15px;
+}
+
+.widget-standard-row .widget-row-label {
+    color: var(--app-icon);
+    letter-spacing: 0.25px;
+    line-height: 18px;
+    grid-column: 2/3;
+}
+
+.widget-standard-row .widget-additional-info {
+    color: var(--app-icon);
+    font-family: var(--app-font-bold);
+    line-height: 18px;
+    grid-column: 3/4;
+}
+
+.widget-standard-row.two-col .widget-row-label {
+    grid-column: 1/2;
+}
+
+.widget-standard-row.two-col .widget-additional-info {
+    grid-column: 2/3;
+}

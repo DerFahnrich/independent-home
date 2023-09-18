@@ -1,0 +1,30 @@
+.user-activity-widget-container .progress-user-activity {
+    height: 12px;
+    margin-bottom: 9px;
+}
+
+.user-activity-widget-container .logged-in-users {
+    color: var(--app-dark-grey);
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.user-activity-widget-container .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 0;
+}
+
+.user-activity-widget-container .button-container .link-button {
+    border: var(--app-main-color) solid 1.5px;
+    border-radius: 6px;
+    color: var(--app-main-color);
+    font-family: var(--app-font-bold);
+    font-size: 12px;
+    line-height: 18px;
+    padding-block: 14px;
+    text-align: center;
+}

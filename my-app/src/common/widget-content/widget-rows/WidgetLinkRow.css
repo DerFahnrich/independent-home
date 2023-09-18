@@ -1,0 +1,26 @@
+.widget-link-row.two-col-reversed {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 30px;
+    padding: 0 4px;
+}
+
+.widget-link-row.widget-link {
+    color: var(--app-icon);
+    text-decoration: none;
+}
+
+.widget-link-row .widget-icon {
+    grid-column: 1/2;
+    width: 18px;
+}
+
+.widget-link-row .widget-icon SVG {
+    width: 15px;
+}
+
+.widget-link-row.widget-link:hover {
+    background-color: var(--app-super-light-grey);
+}
